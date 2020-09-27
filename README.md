@@ -1,2 +1,4 @@
 # SIO-Script
-scripts para materia de SIO
+Ejecutar el bash **exec**, para visualizar resultados
+
+*OBSERVACION* Debes tener instalado gcc para poder compilar los archivos c
