@@ -52,4 +52,4 @@ Mensajes de Productor 4, Caracteres Aleatorios
 4)  ...
 ```
 
-*OBSERVACION* Debes tener instalado ***gcc*** para poder compilar los archivos ```~.c```
+*OBSERVACION:* Debes tener instalado ***gcc*** para poder compilar los archivos ```~.c```
