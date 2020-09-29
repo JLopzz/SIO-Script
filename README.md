@@ -3,11 +3,12 @@
 ## Ejercicio 1: Shell Bash
 Se encuentra en la carpeta ```/bash```.
 
-Para su ejecucion completase ha creado el script ejecutable **exec.sh**
+Para su ejecucion completase ha creado el script ejecutable *exec.sh*
 En consola de comandos:
-- ```. exec.sh```
+```my@pc:~/foo/SIO-Script/bash$ **. exec.sh**```
 
 El resultado sera algo parecido a esto:
+
 ```Uso del Disco: 19/24GB (84%)
 Uso de la Memoria: 2864/7867MB (36.41%)
 Uso del Procesador: 14.00% total (10.60% user, 3.40% system) 
@@ -17,17 +18,18 @@ Procesos con mayor consumo de CPU:
 %CPU %MEM   PID  PPID COMMAND
 13.1  5.5 13938  2073 Web Content
 10.2  5.5  2073     1 MainThread
-9.7  4.0  3177  2073 Web Content```
+9.7  4.0  3177  2073 Web Content 
+```
 - - -
 ## Ejercicio 2: Script C
-Se encuentra en la carpeta '/dev-c'.
+Se encuentra en la carpeta ```/dev-c```.
 
 Su ejecucion es parecida al ejercicio 1.
 Para su ejecucion completase ha creado el script ejecutable **exec.sh**
 En consola de comandos:
-- '. exec.sh'
+```my@pc:~/foo/SIO-Script/dev-c$ **. exec.sh**```
 
-'Mensajes de Productor 1, Numero Primos Aleatorios
+```Mensajes de Productor 1, Numero Primos Aleatorios
 1)	Numero obtenido de Productor 1: 5903
 2)	Numero obtenido de Productor 1: 557
 3)	Numero obtenido de Productor 1: 1439
@@ -45,6 +47,7 @@ Mensajes de Productor 3, Numero Impares Aleatorios
 Mensajes de Productor 4, Caracteres Aleatorios
 1)	Caracter obtenido de Productor 4: P
 2)	Caracter obtenido de Productor 4: U
-3)	Caracter obtenido de Productor 4: Z'
+3)	Caracter obtenido de Productor 4: Z
+```
 
-*OBSERVACION* Debes tener instalado ***gcc*** para poder compilar los archivos '~.c'
+*OBSERVACION* Debes tener instalado ***gcc*** para poder compilar los archivos ```~.c```
