@@ -1,7 +1,7 @@
 # SIO-Script
 
 ## Ejercicio 1: Shell Bash
-Se encuentra en la carpeta '/bash'.
+Se encuentra en la carpeta ' /bash '.
 
 Para su ejecucion completase ha creado el script ejecutable **exec.sh**
 En consola de comandos:
@@ -10,7 +10,7 @@ En consola de comandos:
 El resultado sera algo parecido a esto:
 'Uso del Disco: 19/24GB (84%)
 Uso de la Memoria: 2864/7867MB (36.41%)
-Uso del Procesador: 14.00% total (10.60% user, 3.40% system)
+Uso del Procesador: 14.00% total (10.60% user, 3.40% system) 
 Promedio de carga del Procesador (4 núcleos): 12% (50% total)
 Procesos con mayor consumo de CPU:
 %CPU %MEM   PID  PPID COMMAND
