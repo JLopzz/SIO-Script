@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<string.h>
 
-#define LLAVE3 30303
+#define LLAVE2 20202
 #define MAX 25
 
 struct msj{
@@ -19,14 +19,14 @@ int getRandom(int init){
 	time_t t;
 	unsigned int seed = &t;
 	srand(seed + init);
-	return rand() % 111;
+	return rand() % 10000;
 }
 
-/* Funcion Generadora de numeros impares aleatorios */
+/* Funcion Generadora de numeros pares aleatorios */
 int getPar(int init){
   int nPar = getRandom(init);
-  if((nPar%2) == 1) return nPar;
-  else return getPar(init++);
+  if((nPar%2) == 1) return getPar(init++);
+  else return nPar;
 }
 
 /*
@@ -46,11 +46,13 @@ int main(){
 	struct msj msj;
 	msj.tipo = 1;
 
-	for(int i = 0; i<20; i++) msj.text[i] = setUnic(i, msj.text);
+	for(int i = 0; i<21; i++){
+		if(i<20) sprintf(msj.text, "%i", setUnic(i,msj.text));
+		else sprintf(msj.text, "%i", -20202);
+		lenmsg = strlen(msj.text);
+		if((id=msgget(LLAVE2,0600|IPC_CREAT))==-1) perror("error msgget");
+		if(msgsnd(id,&msj,(lenmsg+1),0)==-1) perror("error msgsnd");
+	}
 
-	lenmsg = strlen(msj.text);
-	if((id=msgget(LLAVE3,0600|IPC_CREAT))==-1) perror("error msgget");
-	if(msgsnd(id,&msj,(lenmsg+1),0)==-1) perror("error msgsnd");
-	
 	return 0;
 }
