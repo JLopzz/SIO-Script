@@ -3,7 +3,7 @@
 ## Ejercicio 1: Shell Bash
 Se encuentra en la carpeta ```/bash```.
 
-Para su ejecucion completase ha creado el script ejecutable *exec.sh*
+Para su ejecucion completase ha creado el script ejecutable *exec.sh*.
 En consola de comandos:
 > ```my@pc:~/foo/SIO-Script/bash$ . exec.sh```
 
@@ -25,7 +25,7 @@ Procesos con mayor consumo de CPU:
 Se encuentra en la carpeta ```/dev-c```.
 
 Su ejecucion es parecida al ejercicio 1.
-Para su ejecucion completase ha creado el script ejecutable **exec.sh**
+Para su ejecucion completase ha creado el script ejecutable *exec.sh*.
 En consola de comandos:
 > ```my@pc:~/foo/SIO-Script/dev-c$ . exec.sh```
 
@@ -49,6 +49,7 @@ Mensajes de Productor 4, Caracteres Aleatorios
 1)	Caracter obtenido de Productor 4: P
 2)	Caracter obtenido de Productor 4: U
 3)	Caracter obtenido de Productor 4: Z
+4)  ...
 ```
 
 *OBSERVACION* Debes tener instalado ***gcc*** para poder compilar los archivos ```~.c```
