@@ -5,7 +5,7 @@ Se encuentra en la carpeta ```/bash```.
 
 Para su ejecucion completase ha creado el script ejecutable *exec.sh*
 En consola de comandos:
-```my@pc:~/foo/SIO-Script/bash$ **. exec.sh**```
+> ```my@pc:~/foo/SIO-Script/bash$ . exec.sh```
 
 El resultado sera algo parecido a esto:
 
@@ -27,7 +27,7 @@ Se encuentra en la carpeta ```/dev-c```.
 Su ejecucion es parecida al ejercicio 1.
 Para su ejecucion completase ha creado el script ejecutable **exec.sh**
 En consola de comandos:
-```my@pc:~/foo/SIO-Script/dev-c$ **. exec.sh**```
+> ```my@pc:~/foo/SIO-Script/dev-c$ . exec.sh```
 
 ```Mensajes de Productor 1, Numero Primos Aleatorios
 1)	Numero obtenido de Productor 1: 5903
