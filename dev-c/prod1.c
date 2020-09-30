@@ -15,7 +15,7 @@ struct msj{
 /*funcion que genera numeros aleatoris, a partir de la funcion nativa rand()
 genera una semilla, apartir de esta genera un nuevo numero aleatorio
 */
-int getRandom(int init){
+int getrdm(int init){
 	time_t t;
 	unsigned int seed = &t;
 	srand(seed + init);
@@ -24,7 +24,7 @@ int getRandom(int init){
 
 //Generador de numeros primos, a partir del generador de numeros aleatorios
 int getPrimo(int init){
-	int nPri = getRandom(init);
+	int nPri = getrdm(init);
 	int count = 0;
 	for(int i = 0 ; i <= nPri; i++) 
 		if((nPri % (i+1)) == 0 ) count++;
@@ -43,12 +43,15 @@ int setUnic(int init, char txt[]){
 //Funcion principal
 int main(){
 	int id;
+	int num[21];
 	unsigned int lenmsg;
 	struct msj msj;
 	msj.tipo = 1;
 
 	for(int i = 0; i<21; i++){
-		if(i<20) sprintf(msj.text, "%i", setUnic(i,msj.text));
+		int rdm = setUnic(i,num);
+		num[i] = rdm;
+		if(i<20) sprintf(msj.text, "%i", rdm);
 		else sprintf(msj.text, "%i", -10101);
 		lenmsg = strlen(msj.text);
 		if((id=msgget(LLAVE1,0600|IPC_CREAT))==-1) perror("error msgget");

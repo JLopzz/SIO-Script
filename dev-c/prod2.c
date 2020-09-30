@@ -42,12 +42,15 @@ int setUnic(int init, char txt[]){
 //funcion Principal
 int main(){
 	int id;
+	int num[21];
 	unsigned int lenmsg;
 	struct msj msj;
 	msj.tipo = 1;
 
 	for(int i = 0; i<21; i++){
-		if(i<20) sprintf(msj.text, "%i", setUnic(i,msj.text));
+		int rdm = setUnic(i,num);
+		num[i] = rdm;
+		if(i<20) sprintf(msj.text, "%i", rdm);
 		else sprintf(msj.text, "%i", -20202);
 		lenmsg = strlen(msj.text);
 		if((id=msgget(LLAVE2,0600|IPC_CREAT))==-1) perror("error msgget");

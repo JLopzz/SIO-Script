@@ -23,7 +23,7 @@ int getRandom(int init){
 }
 
 /* Funcion Generadora de numeros impares aleatorios */
-int getPar(int init){
+int getImpar(int init){
   int nPar = getRandom(init);
   if((nPar%2) == 1) return nPar;
   else return getPar(init++);
@@ -33,7 +33,7 @@ int getPar(int init){
 comprueba si el valor es unico, antes de asignarse
 */
 int setUnic(int init, char txt[]){
-	int rdm = getPar(init);
+	int rdm = getImpar(init);
 	for(int x = 0; x < init; x++)
 		if(rdm == txt[x]) return setUnic(init+x,txt);
 	return rdm;
@@ -42,12 +42,15 @@ int setUnic(int init, char txt[]){
 //funcion Principal
 int main(){
 	int id;
+	int num[21];
 	unsigned int lenmsg;
 	struct msj msj;
 	msj.tipo = 1;
 
 	for(int i = 0; i<21; i++){
-		if(i<20) sprintf(msj.text, "%i", setUnic(i,msj.text));
+		int rdm = setUnic(i,num);
+		num[i] = rdm;
+		if(i<20) sprintf(msj.text, "%i", rdm);
 		else sprintf(msj.text, "%i", -30303);
 		lenmsg = strlen(msj.text);
 		if((id=msgget(LLAVE3,0600|IPC_CREAT))==-1) perror("error msgget");
