@@ -26,7 +26,7 @@ int getRandom(int init){
 int getImpar(int init){
   int nPar = getRandom(init);
   if((nPar%2) == 1) return nPar;
-  else return getPar(init++);
+  else return getImpar(init++);
 }
 
 /*
