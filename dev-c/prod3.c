@@ -32,10 +32,10 @@ int getImpar(int init){
 /*
 comprueba si el valor es unico, antes de asignarse
 */
-int setUnic(int init, char txt[]){
+int setUnic(int init, int n[]){
 	int rdm = getImpar(init);
 	for(int x = 0; x < init; x++)
-		if(rdm == txt[x]) return setUnic(init+x,txt);
+		if(rdm == n[x]) return setUnic(init+x,n);
 	return rdm;
 }
 
